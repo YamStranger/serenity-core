@@ -80,7 +80,7 @@ class WhenOpeningAndClosingBrowserSessions extends Specification {
         when:
             webdriver.get("about:blank")
             webdriver.quit()
-        webdriver.get("about:blank")
+            webdriver.get("about:blank")
         then:
             webdriver.proxiedWebDriver != null
     }
